@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Vocacional</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Test Vocacional</h1>
+        <p>Responde las siguientes preguntas para conocer tus intereses profesionales.</p>
+        
+        <form action="#" method="post">
+            <div class="pregunta">
+                <label>1. ¿Qué actividad disfrutas más?</label><br>
+                <select name="actividad_favorita" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="resolver_problemas">Resolver problemas matemáticos</option>
+                    <option value="dibujar">Dibujar o diseñar</option>
+                    <option value="ayudar_personas">Ayudar a otras personas</option>
+                    <option value="experimentar">Hacer experimentos</option>
+                </select>
+            </div>
+
+            <div class="pregunta">
+                <label>2. ¿Qué asignatura te gusta más?</label><br>
+                <select name="asignatura_preferida" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="matematicas">Matemáticas</option>
+                    <option value="arte">Arte</option>
+                    <option value="biologia">Biología</option>
+                    <option value="historia">Historia</option>
+                </select>
+            </div>
+
+            <div class="pregunta">
+                <label>3. ¿Prefieres trabajar en equipo o individualmente?</label><br>
+                <input type="radio" name="trabajo_equipo" value="equipo" required> En equipo<br>
+                <input type="radio" name="trabajo_equipo" value="individual"> Individualmente<br>
+            </div>
+
+            <div class="pregunta">
+                <label>4. ¿Te gustaría tener un trabajo en el que...</label><br>
+                <input type="checkbox" name="trabajo_gusto[]" value="viajar"> Puedas viajar<br>
+                <input type="checkbox" name="trabajo_gusto[]" value="crear"> Crees cosas nuevas<br>
+                <input type="checkbox" name="trabajo_gusto[]" value="analizar"> Analices información<br>
+                <input type="checkbox" name="trabajo_gusto[]" value="liderar"> Lideres equipos<br>
+            </div>
+
+            <div class="pregunta">
+                <label>5. Describe brevemente tus intereses:</label><br>
+                <textarea name="intereses" rows="4" cols="50" placeholder="Escribe aquí..."></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
